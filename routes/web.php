@@ -40,8 +40,11 @@ Route::get('/welcome',function (){
     return redirect('');
 });
 
+// controllers users ito ung functions from controllers
 
+// index users
 Route::get('users','Users@index');
+// view users
 Route::get('users/view/{name}','Users@view');
-// Route::get('users/show/{name}/{age}/{course}','Users@show');
+// users show
 Route::get('users/show/{name}/{age}/{course}','Users@show');
