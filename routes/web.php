@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Http;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,3 +48,7 @@ Route::get('users','Users@index');
 Route::get('users/view/{name}','Users@view');
 // users show
 Route::get('users/show/{name}/{age}/{course}','Users@show');
+
+// form
+Route::get('account','AccountsController@account');
+Route::post('register','AccountsController@register');

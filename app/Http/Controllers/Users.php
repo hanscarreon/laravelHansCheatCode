@@ -25,7 +25,6 @@ class Users extends Controller
         $data['name'] = $name;
         $data['age'] = $age;
         $data['course'] = $course;
-
         // way2
         // $data = array( 'name'=> $name, 'age'=>$age, 'course'=>$course);
         return view('pages/show',$data);
